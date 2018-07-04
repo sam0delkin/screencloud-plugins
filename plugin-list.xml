@@ -66,4 +66,15 @@
         <weblink>https://github.com/olav-st/screencloud-plugins</weblink>
         <download>https://raw.githubusercontent.com/olav-st/screencloud-plugins/master/shell/current.zip</download>
     </plugin>
+    <plugin>
+        <name>Puush</name>
+        <shortname>puush</shortname>
+        <description>Upload screenshot to puu.sh</description>
+        <author>Stas Larionov</author>
+        <version>1.0</version>
+        <category>online</category>
+        <icon>https://raw.githubusercontent.com/sam0delkin/screencloud-plugins/master/puush/icon.png</icon>
+        <weblink>https://github.com/sam0delkin/screencloud-plugins</weblink>
+        <download>https://raw.githubusercontent.com/sam0delkin/screencloud-plugins/master/puush/current.zip</download>
+    </plugin>
 </plugins>
