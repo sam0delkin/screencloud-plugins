@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>ShellScript</class>
- <widget class="QDialog" name="ShellScript">
+ <class>Puush</class>
+ <widget class="QDialog" name="Puush">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -23,14 +23,14 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout">
         <item>
-         <widget class="QLabel" name="label_command">
+         <widget class="QLabel" name="label_api_key">
           <property name="text">
            <string>API Key:</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="input_command">
+         <widget class="QLineEdit" name="input_api_key">
           <property name="placeholderText">
            <string>Example: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</string>
           </property>
@@ -54,7 +54,7 @@
   </layout>
  </widget>
  <tabstops>
-  <tabstop>input_command</tabstop>
+  <tabstop>input_api_key</tabstop>
   <tabstop>buttonBox</tabstop>
  </tabstops>
  <resources/>
@@ -62,7 +62,7 @@
   <connection>
    <sender>buttonBox</sender>
    <signal>accepted()</signal>
-   <receiver>ShellScript</receiver>
+   <receiver>Puush</receiver>
    <slot>accept()</slot>
    <hints>
     <hint type="sourcelabel">
@@ -78,7 +78,7 @@
   <connection>
    <sender>buttonBox</sender>
    <signal>rejected()</signal>
-   <receiver>ShellScript</receiver>
+   <receiver>Puush</receiver>
    <slot>reject()</slot>
    <hints>
     <hint type="sourcelabel">
