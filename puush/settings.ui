@@ -15,7 +15,7 @@
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
-    <widget class="QGroupBox" name="group_shell">
+    <widget class="QGroupBox" name="group_puush">
      <property name="title">
       <string>Puush</string>
      </property>

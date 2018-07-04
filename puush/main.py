@@ -14,13 +14,13 @@ class PuushUploader():
 		self.settingsDialog = self.uil.load(QFile(workingDir + "/settings.ui"), parentWidget)
 		self.settingsDialog.connect("accepted()", self.saveSettings)
 		self.loadSettings()
-		self.settingsDialog.group_shell.input_api_key.text = self.apiKey
+		self.settingsDialog.group_puush.input_api_key.text = self.apiKey
 		self.settingsDialog.open()
 
 	def loadSettings(self):
 		settings = QSettings()
 		settings.beginGroup("uploaders")
-		settings.beginGroup("shell")
+		settings.beginGroup("puush")
 		self.apiKey = settings.value("apiKey", "")
 		self.outputIsUrl = True
 		settings.endGroup()
@@ -29,8 +29,8 @@ class PuushUploader():
 	def saveSettings(self):
 		settings = QSettings()
 		settings.beginGroup("uploaders")
-		settings.beginGroup("shell")
-		settings.setValue("apiKey", self.settingsDialog.group_shell.input_api_key.text)
+		settings.beginGroup("puush")
+		settings.setValue("apiKey", self.settingsDialog.group_puush.input_api_key.text)
 		settings.endGroup()
 		settings.endGroup()
 
